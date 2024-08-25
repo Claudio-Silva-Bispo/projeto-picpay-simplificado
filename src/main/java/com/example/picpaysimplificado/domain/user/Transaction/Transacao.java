@@ -19,7 +19,7 @@ public class Transacao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private BigDecimal conta;
+    private BigDecimal saldo;
 
 
 
