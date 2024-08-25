@@ -43,6 +43,36 @@ boas práticas adotadas.
 3. Transacao
 3.1. Transacao
 4. Repository
+4.1. UsuarioRepositorio
+4.2. TransacaoRepositorio
+5. Service
+5.1. UsuarioService
+
+# Conexão com o banco H2
+
+1. No documento application.properties
+
+```bash
+   spring.application.name=picpaysimplificado
+  
+  # conexão com o banco
+   spring.datasource.url=jdbc:h2:mem:testedb
+   spring.datasource.driver-class-name=org.h2.Driver
+   
+   # nome do usuário do banco
+   spring.datasource.username=claudio
+   
+   # senha de acesso ao banco
+   spring.datasource.password=
+   
+   # uso do Hibernate
+   spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+   
+   # Para visualizar no terminal/console
+   spring.h2.console.enabled=true
+```
+
+
 
 
 
