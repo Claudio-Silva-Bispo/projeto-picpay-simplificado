@@ -1,5 +1,6 @@
 package com.example.picpaysimplificado.domain.user.Service;
 
+import com.example.picpaysimplificado.domain.user.DTO.UsuarioDTO;
 import com.example.picpaysimplificado.domain.user.Repository.UsuarioRepositorio;
 import com.example.picpaysimplificado.domain.user.User.Usuario;
 import com.example.picpaysimplificado.domain.user.User.UsuarioTipo;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 // Indicar para o Spring que é uma classe de serviço
 @Service
@@ -34,5 +36,17 @@ public class UsuarioService {
     // Salvar um novo usuario no banco de dados
     public void salveUser(Usuario usuario){
         this.repositorio.save(usuario);
+    }
+
+    // Criar usuário
+    public Usuario criarUsuario(UsuarioDTO data){
+        Usuario novoUsuario = new Usuario(data);
+        this.salveUser(novoUsuario);
+        return novoUsuario;
+    }
+
+    // Coletar todos os usuários
+    public List<Usuario> pegarTodosUsuarios(){
+       return this.repositorio.findAll();
     }
 }

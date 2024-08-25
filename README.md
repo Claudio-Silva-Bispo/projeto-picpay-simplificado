@@ -37,16 +37,19 @@ boas práticas adotadas.
 # Criar estrutura do meu projeto
 
 1. Package domain.usuario dentro do main > java
-2. Usuario
+2. Usuario / Model / Entity
 2.1. Usuario
 2.2. UsuarioTipo
-3. Transacao
+3. Transacao 
 3.1. Transacao
 4. Repository
 4.1. UsuarioRepositorio
 4.2. TransacaoRepositorio
 5. Service
 5.1. UsuarioService
+6. Controller
+7. Infra
+7.1. Usei aqui para criar um Bean específico.
 
 # Conexão com o banco H2
 
