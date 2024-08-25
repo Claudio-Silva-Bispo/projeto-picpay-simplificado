@@ -24,13 +24,9 @@ public class TransacaoService {
     @Autowired
     private TransacaoRepositorio repositorio;
 
-    private final RestTemplate restTemplate;
-
-    // Inicializando RestTemplate no construtor
-    public TransacaoService() {
-        this.restTemplate = new RestTemplate();
-    }
-
+    @Autowired
+    private  RestTemplate restTemplate;
+    
     // Método para criar uma transação
     public void criarTransacao(TransacaoDTO transacao) throws Exception {
         Usuario enviar = this.usuarioService.findUsuarioById(transacao.enviarId());
