@@ -1,4 +1,4 @@
-package com.example.picpaysimplificado.domain.user.Usuario;
+package com.example.picpaysimplificado.domain.user.User;
 
 import jakarta.persistence.*;
 import lombok.*;
