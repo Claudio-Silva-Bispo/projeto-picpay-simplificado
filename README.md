@@ -1,8 +1,17 @@
-# Projeto PicPay Simplficado para Backend
+# Projeto Java com Spring Boot
+Este projeto foi desenvolvido em Java, utilizando Lombok, Spring Boot, JPA e uma API RESTful, 
+com base em uma atividade proposta pelo PICPAY. 
 
-## Documentação para demonstrar o que foi feito mas com minhas modificações
+O objetivo é demonstrar o conhecimento adquirido e aplicado em Java através da implementação 
+de uma solução completa.
 
-# Usar o Spring Initializr para gerar o projeto
+No decorrer deste repositório, serão apresentados todos os passos e decisões tomadas durante 
+o desenvolvimento do projeto, com o intuito de evidenciar a proficiência em Java e as 
+boas práticas adotadas.
+
+***Documentação para demonstrar o que foi feito com base no meu conhecimento e ajuda da documentação***
+
+# Usar o SPRING INITIALIZR para gerar o projeto
 
     $ https://start.spring.io/
 
